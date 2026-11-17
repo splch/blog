@@ -15,6 +15,7 @@ html {
 img,
 picture,
 video,
+canvas,
 audio,
 svg {
   display: block;
@@ -242,7 +243,8 @@ article img,
   max-width: none;
 }
 
-.gallery > :is(iframe, video) {
+.gallery > :is(iframe, video),
+article iframe.video {
   aspect-ratio: 16 / 9;
   width: 100%;
   border: none;
